@@ -1,0 +1,41 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="signup.css" type="text/css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>BUILD</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="/design">DESIGN</a>
+    <a href="/signup" class="active">SIGN UP</a>
+    <a href="/login">LOG IN</a>
+    <a href="/account">ACCOUNT</a>
+  </div>
+
+  <form style="border:1px solid #ccc" action="http://flip3.engr.oregonstate.edu:7070/register" method="POST">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <input type="hidden" name="collection" id="collection" value="Esther">
+      <br>
+      <label for="email"><b>Email: </b></label>
+      <input type="text" name="email" placeholder="Enter Email" id="email" required>
+      <br>
+      <label for="password"><b>Password: </b></label>
+      <input type="password" name= "password" placeholder="Enter Password" id="password" required>
+      <br>
+      <br>
+      <div class="buttons">
+        <button type="button" id="submit">Sign Up</button>
+      </div>
+    </div>
+  </form>
+
+  <script src="/signup.js"></script>
